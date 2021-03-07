@@ -1,5 +1,5 @@
 const renderFibonacci = (sequence, container) => {
-  
+
   const fibonacciSequence = document.createElement("div");
 
   sequence.forEach(number => {

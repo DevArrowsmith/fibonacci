@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fibonacci Sequence Generator</title>
   <script src='./js/calculateFibonacci.js'></script>
+  <script src='./js/renderFibonacci.js'></script>
 </head>
 
 <body>
@@ -20,17 +21,17 @@
     name="sequence-length" 
     class="number-field" 
     type="number"  
-    value="10"
+    value="15"
   />
 
   <button 
     id="calculate-button" 
     name="calculate-button" 
     class="button" 
-    onClick="calculateFibonacci(document.getElementById(`sequence-length`).value)"
+    onClick="renderFibonacci(calculateFibonacci(document.getElementById(`sequence-length`).value), `fibonacci-container`)"
   >Calculate</button> 
 
-  <script>calculateFibonacci(document.getElementById("sequence-length").value)</script>
-  
+  <div id="fibonacci-container"></div>
+
 </body>
 </html>
