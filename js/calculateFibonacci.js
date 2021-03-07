@@ -1,8 +1,8 @@
-  const calculateFibonacci = (n) => {
+const calculateFibonacci = (sequenceLength) => {
   let arr = [0, 1];
-  for (let i = 1; i < n - 1; i++) {
+  for (let i = 1; i < sequenceLength - 1; i++) {
     arr.push(arr[i-1] + arr[i])
   };
-  console.log(arr);
+
   return arr;
-}
+};
