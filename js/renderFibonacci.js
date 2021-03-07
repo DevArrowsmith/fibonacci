@@ -1,11 +1,8 @@
 const renderFibonacci = (sequence, container) => {
 
-  const fibonacciSequence = document.createElement("div");
+  const fibonacciContainer = document.getElementById(`${container}`);
 
   sequence.forEach(number => {
-    fibonacciSequence.appendChild(document.createTextNode(number));
+    fibonacciContainer.insertAdjacentHTML('beforeend',`<p>${number}</p>`);
   })
-
-  const fibonacciContainer = document.getElementById(`${container}`);
-  document.body.insertBefore(fibonacciSequence, fibonacciContainer);
 };
